@@ -1,7 +1,145 @@
+html {
+	height: 100%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.tarefa {
+	background-color: white;
+	border-radius: 5px;
+	font-size: 1.3em;
+	font-weight: 700;
+	padding: 5px 10px;
+	margin: 20px auto;
+	width: 70%;
+}
+
 .selecao {
-    background-color: rgb(128, 128, 128);
+  background-color: #487ced;
 }
 
 .completed {
-    text-decoration: line-through solid rgb(0, 0, 0);
+	background-color: #00d300;
+  text-decoration: line-through solid black;
+}
+
+.header {
+  align-items: center;
+  background-color: #1d1d1d;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-title {
+  color: white;
+}
+
+.main-content {
+	align-items: center;
+	background-image: linear-gradient(#24005c, #c450c4);
+  background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	justify-content: stretch;
+	padding: 0 40px;
+	width: 100%;
+}
+
+.button {
+	background-color: #1d1d1d;
+	border: none;
+	border-radius: 30px;
+	color: white;
+	font-weight: 700;
+	height: 40px;
+	margin: 10px;
+	width: 200px;
+}
+
+.input {
+	border-radius: 10px;
+	height: 20px;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	width: 80%;
+}
+
+.explanation {
+	align-items: center;
+	color: white;
+	display: flex;
+	font-size: 1.5em;
+	justify-content: center;
+	margin: 0;
+	padding: 50px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.actions {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.buttons-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.list {
+	width: 100%;
+}
+
+/* FOOTER */
+.footer {
+	align-items: center;
+	background-color: #1d1d1d;
+	display: flex;
+	flex-shrink: 0;
+	height: 70px;
+	justify-content: center;
+  width: 100%;
+}
+
+.footer-content {
+	color: white;
+	font-weight: 700;
+}
+
+@media (max-width: 500px) {
+	.header-title {
+		font-size: 1.5em
+	}
+
+	.explanation {
+		font-size: 1.2em;
+	}
+
+	.tarefa {
+		font-size: 1em;
+		width: 90%
+	}
+
+	.footer-content {
+		font-size: 0.8em;
+	}
 }

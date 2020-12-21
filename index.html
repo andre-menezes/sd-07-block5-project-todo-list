@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto 5 | To Do List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <header>
-        <h1>Minha Lista de Tarefas</h1>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Minha Lista de Tarefas</h1>
     </header>
-    <section>
-        <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-        <input type="text" name="tarefa" id="texto-tarefa" placeholder="Digite sua tarefa aqui">
-        <button id="criar-tarefa">Adicionar</button>
-        <button id="apaga-tudo">Apagar lista</button>
-        <button id="remover-finalizados">Remover finalizados</button>
-        <button id="salvar-tarefa">Salvar Tarefa</button>
-        <button id="mover-cima">Cima</button>
-        <button id="mover-baixo">Baixo</button>
-        <button id="remove-selecionado">Remover selecionado</button>
-        <div id="lista">
-            <ol id="lista-tarefas">
-            </ol>
-        </div>
-               
-    </section>
-    <script src="script.js"></script>
-</body>
+    <section class="main-content">
+      <p id="funcionamento" class="explanation">
+        Clique duas vezes em um item para marcá-lo como completo
+      </p>
+      <div class="actions">
+        <input
+          type="text"
+          name="tarefa"
+          id="texto-tarefa"
+          placeholder="Digite sua tarefa aqui"
+          class="input"
+				/>
+				<div class="buttons-content">
+					<button id="criar-tarefa" class="button">Adicionar tarefa</button>
+        	<button id="apaga-tudo" class="button">Apagar lista</button>
+        	<button id="remover-finalizados" class="button">Remover finalizados</button>
+        	<button id="salvar-tarefa" class="button">Salvar Tarefas</button>
+        	<button id="mover-cima" class="button">Mover tarefa para cima</button>
+        	<button id="mover-baixo" class="button">Mover tarefa para baixo</button>
+        	<button id="remove-selecionado" class="button">Remover selecionado</button>
+				</div>
+        
+      </div>
 
+      <div id="lista" class="list">
+        <ol id="lista-tarefas"></ol>
+      </div>
+    </section>
+		
+		<footer class="footer">
+			<p class="footer-content">© 2020 - Desenvolvido por Andre Menezes</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
